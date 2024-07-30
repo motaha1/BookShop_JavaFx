@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="613.0" prefWidth="803.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="database1.StaController">
+   <children>
+      <Button fx:id="add" layoutX="32.0" layoutY="290.0" mnemonicParsing="false" onAction="#add" prefHeight="64.0" prefWidth="201.0" text="add" />
+      <Button fx:id="del" layoutX="32.0" layoutY="386.0" mnemonicParsing="false" onAction="#del" prefHeight="64.0" prefWidth="201.0" text="delete" />
+      <TableView fx:id="btable" layoutX="253.0" onMouseClicked="#select" prefHeight="613.0" prefWidth="546.0">
+        <columns>
+          <TableColumn fx:id="c1" prefWidth="171.2000274658203" text="barcode" />
+          <TableColumn fx:id="c2" prefWidth="162.4000244140625" text="اسم المنتج" />
+            <TableColumn fx:id="c3" prefWidth="56.800048828125" text="السعر " />
+        </columns>
+      </TableView>
+      <JFXTextField fx:id="tit" layoutX="32.0" layoutY="94.0" promptText="اسم المنتج" />
+      <JFXTextField fx:id="price" layoutX="29.0" layoutY="153.0" promptText="السعر" />
+      <JFXTextField fx:id="bar" layoutX="32.0" layoutY="47.0" promptText="barcode" />
+      <Button fx:id="update" layoutX="26.0" layoutY="494.0" mnemonicParsing="false" onAction="#update" prefHeight="72.0" prefWidth="201.0" text="update" />
+   </children>
+</Pane>

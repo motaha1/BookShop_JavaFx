@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="608.0" prefWidth="856.0" style="-fx-background-image: D:\Documents\NetBeansProjects\database1\src\database1\77.png;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="database1.LoginController">
+   <children>
+      <ImageView fitHeight="656.0" fitWidth="918.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@77.png" />
+         </image>
+      </ImageView>
+      <Pane layoutX="310.0" layoutY="221.0" prefHeight="266.0" prefWidth="256.0" style="-fx-background-color: white;">
+         <children>
+            <Label layoutX="6.0" layoutY="47.0" prefHeight="39.0" prefWidth="110.0" text="username " textFill="#d50000">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <TextField fx:id="user" layoutX="107.0" layoutY="54.0" prefHeight="25.0" prefWidth="142.0" promptText="اسم المستخدم" style="-fx-background-radius: 1000;" />
+            <Label layoutX="6.0" layoutY="118.0" text="password" textFill="#c20606">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="pass" layoutX="107.0" layoutY="121.0" prefHeight="25.0" prefWidth="142.0" promptText="كلمة المرور" style="-fx-background-radius: 1000;" />
+            <Button fx:id="but" layoutX="73.0" layoutY="196.0" mnemonicParsing="false" onAction="#login" prefHeight="40.0" prefWidth="110.0" style="-fx-background-radius: 1000;" text="تسجيل الدخول" textFill="#740404">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+      <Label fx:id="lo" layoutX="390.0" layoutY="552.0" text="loding..." visible="false" />
+   </children>
+</AnchorPane>
